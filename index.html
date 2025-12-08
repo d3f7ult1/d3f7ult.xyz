@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>d3f7ult - Bug Bounty Research</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+<style>
+body{
+    background:#000;
+    color:#00ff99;
+    font-family: Consolas, monospace;
+    margin:0;
+    padding:0;
+}
+header{
+    padding:50px;
+    text-align:center;
+}
+h1{font-size:40px;}
+.typing{
+    border-right:2px solid #00ff99;
+    width: 16ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s steps(16), blink .6s infinite alternate;
+}
+@keyframes typing{ from{width:0;} }
+@keyframes blink{ 50%{border-color:transparent;} }
+
+.section{
+    width:90%;
+    margin:auto;
+    padding:30px 0;
+}
+
+.card{
+    border:1px solid #00ff99;
+    padding:20px;
+    margin:10px 0;
+    transition:.3s;
+}
+.card:hover{
+    background:#001a0f;
+    transform:scale(1.02);
+}
+
+ul{list-style:none;padding-left:0;}
+li{
+    padding:6px 0;
+    border-bottom:1px solid #003a26;
+}
+
+.logo{
+    width:22px;
+    vertical-align:middle;
+    margin-right:8px;
+}
+
+a{color:#00ff99;}
+
+footer{
+    text-align:center;
+    padding:20px;
+    border-top:1px solid #003;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1><span class="typing">d3f7ult Terminal</span></h1>
+    <p>Bug Bounty Researcher</p>
+</header>
+
+<div class="section">
+
+    <h2>Platforms</h2>
+
+    <div class="card">
+        <p>
+            <img src="https://hackerone.com/themes/hackerone/assets/favicon-32x32.png" class="logo">
+            HackerOne: <strong>d3f7ult</strong>
+        </p>
+        <p>
+            <img src="https://bugcrowd.com/favicon.ico" class="logo">
+            Bugcrowd: <strong>d3f7ult</strong>
+        </p>
+        <p>
+            <img src="https://www.yeswehack.com/favicon.ico" class="logo">
+            YesWeHack: <strong>0b1t0</strong>
+        </p>
+        <p>
+            <img src="https://inspectiv.com/favicon.ico" class="logo">
+            Inspectiv: <strong>ryneXXX</strong>
+        </p>
+    </div>
+
+</div>
+
+
+<div class="section">
+
+<h2>Bug Focus Areas</h2>
+
+<div class="card"><ul>
+    <li>IDOR</li>
+    <li>Broken Access Control (BAC)</li>
+    <li>XSS (Reflected/Stored)</li>
+    <li>SQL Injection</li>
+    <li>RCE</li>
+    <li>Business Logic Errors</li>
+    <li>Android / iOS Testing</li>
+    <li>Cryptography Issues</li>
+    <li>API Security</li>
+    <li>SSRF</li>
+</ul></div>
+
+</div>
+
+
+<div class="section">
+
+<h2>Example PoCs (safe demos)</h2>
+
+<div class="card">
+    <p><a href="?vuln=xss">Simulate XSS alert</a></p>
+    <p><a href="?redirect=https://example.com">Simulate Redirect</a></p>
+    <p><a href="#" onclick="alert('Demo only')">Clickjacking example</a></p>
+</div>
+
+</div>
+
+<footer>
+<p>© d3f7ult | Learning • Research • Reporting</p>
+</footer>
+
+</body>
+</html>
