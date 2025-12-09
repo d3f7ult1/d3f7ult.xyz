@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>d3f7ult | Ethical Hacker & Bug Bounty</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+/* Dark hacker theme */
+body {
+    background: #000;
+    color: #00ffea;
+    font-family: Consolas, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #44eaff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #00ffea;
+    text-shadow: 0 0 5px cyan;
+}
+
+/* terminal typing animation */
+.terminal {
+    width: 100%;
+    padding: 40px 20px;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #00ffaa;
+    animation: typing 4s steps(40, end), blink .8s infinite;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+/* section blocks */
+.section {
+    padding: 20px;
+    margin: 15px;
+    border: 1px solid #003333;
+    background: rgba(0,255,230,0.07);
+    border-radius: 10px;
+}
+
+h2 {
+    color: #00ffaa;
+}
+
+/* badges */
+.badge {
+    display: inline-block;
+    padding: 6px 10px;
+    background: rgba(0,255,200,0.15);
+    border: 1px solid #00ffea;
+    border-radius: 8px;
+    margin: 5px;
+    font-size: 14px;
+}
+
+/* bug list */
+ul {
+    padding-left: 20px;
+}
+li::before {
+    content: "> ";
+    color: #00ffaa;
+}
+
+/* footer */
+footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    opacity:0.6;
+    font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="terminal">
+    $ Welcome to d3f7ult’s Cyber Terminal_ 
+</div>
+
+<div class="section">
+    <h2>👤 About Me</h2>
+    <p>Hi, I’m <strong>d3f7ult</strong>, an ethical hacker & bug bounty hunter focused on web, mobile, and API security.</p>
+</div>
+
+<div class="section">
+    <h2>🛠 Platforms</h2>
+
+    <div class="badge">🐞 HackerOne – <a href="https://hackerone.com/d3f7ult" target="_blank">d3f7ult</a></div>
+    <div class="badge">🟧 Bugcrowd – <a href="https://bugcrowd.com/d3f7ult" target="_blank">d3f7ult</a></div>
+    <div class="badge">🟪 YesWeHack – <a href="https://yeswehack.com/hunters/0b1t0" target="_blank">0b1t0</a></div>
+    <div class="badge">🟩 Inspectiv – <a href="https://app.inspectiv.com/researcher/rynexxx" target="_blank">rynexxx</a></div>
+
+</div>
+
+<div class="section">
+    <h2>⚡ Skills & Vulnerabilities</h2>
+    <ul>
+        <li>IDOR</li>
+        <li>Broken Access Control (BAC)</li>
+        <li>XSS</li>
+        <li>SQL Injection (SQLi)</li>
+        <li>RCE</li>
+        <li>Business Logic Issues</li>
+        <li>Android / iOS App Testing</li>
+        <li>Cryptography issues</li>
+        <li>API Testing</li>
+        <li>SSRF</li>
+    </ul>
+</div>
+
+<footer>
+    © 2025 d3f7ult – Ethical and legal bug bounty research only.
+</footer>
+
+</body>
+</html>
